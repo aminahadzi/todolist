@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>Todo od <%= username %></h1>
+<p>
+    <ul>
+        <% for(var i=0; i<lista.length; i++) { %>
+            <% if(lista[i] != ""){%>
+            <li>
+                <%= lista[i] %>
+            </li>
+        <% } }%>
+    </ul>
+
+<p>
+<form action="#" method="post">
+    <input type="text" name="task" placeholder="Unesi novi task" required autocomplete="off" autofocus>
+    <br>
+
+    <button type="submit" name="newtask">Unesi</button>
+</form>
+</p>
+    <a href="/">Log out</a>
+</p>
+</body>
+</html>
